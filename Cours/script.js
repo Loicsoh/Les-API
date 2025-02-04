@@ -47,3 +47,40 @@ fetch('https://api.blablagues.net/?rub=blagues')
 .catch((error) => {
     console.log(error)
 })
+
+//fonction qui retourne bonjour dans la console
+function bigUp(){
+    console.log('Bonjour');
+
+}
+bigUp();//retourner la fonction
+
+
+//tableau mapé
+const numbers = [1, 2, 3, 4, 5];
+const double = numbers.map(number => number * 2);
+console.log(double)
+console.log(typeof(numbers))
+console.log(typeof(bigUp))
+
+
+//Tableau avec la methode map() qui retourne les elements du tableau avec leur caracteristique
+
+const produits = [{
+    nom: "smartphone",
+    marque: "samsung",
+    model: "s25 ultra"
+},
+{
+nom: "ordinateures",
+marque: "mackbook",
+model: "pro"
+}];
+
+const nproduits = produits.map(produits => 
+`
+${produits.nom}
+${produits.marque}
+${produits.model}
+`);
+console.log(nproduits.join(''));// join('') pour ranger les elements du tableau

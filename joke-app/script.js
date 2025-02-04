@@ -14,3 +14,14 @@ Blague()
 
 btn.addEventListener('click', Blague)
 
+const myHeaders = new Header();
+const init = {
+    method "GET",
+    headers: myHeaders,
+    mode: "cors",
+    cache: "default",
+}
+
+fetch("http:facebook.com", init) 
+.then((res) => console.log(res));
+
