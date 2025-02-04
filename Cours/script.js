@@ -84,3 +84,6 @@ ${produits.marque}
 ${produits.model}
 `);
 console.log(nproduits.join(''));// join('') pour ranger les elements du tableau
+
+
+//CRUD => Create(POST), Read(GET), Update(PUT), Delete(DELETE)
