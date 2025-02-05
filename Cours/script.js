@@ -3,33 +3,33 @@
 
 //creer une noyuvelle instance de XMLHttpRequest
 
-let xhr = new XMLHttpRequest();
+// let xhr = new XMLHttpRequest();
 
-//configurer la requete
-xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
+// //configurer la requete
+// xhr.open('GET', 'https://api.blablagues.net/?rub=blagues', true);
 
-//Definir se qui se passe lorsque la reponse est recue
-xhr.onload = reqListener;
+// //Definir se qui se passe lorsque la reponse est recue
+// xhr.onload = reqListener;
 
-//Envoyer la requete
-xhr.send();
-
-
-let xhr = new XMLHttpRequest();
-xhr.onload = function(){
-
-    if(xhr.status ===200 && xhr.status < 300){
-        console.log(xhr.responseText);
-    }else{
-        console.log("error", this.responseText);
-    }
-}
+// //Envoyer la requete
+// xhr.send();
 
 
-xhr.onerror = () => {
-   // console.log('Erreur de reseau')
-}
-xhr.send()
+// let xhr = new XMLHttpRequest();
+// xhr.onload = function(){
+
+//     if(xhr.status ===200 && xhr.status < 300){
+//         console.log(xhr.responseText);
+//     }else{
+//         console.log("error", this.responseText);
+//     }
+// }
+
+
+// xhr.onerror = () => {
+//    // console.log('Erreur de reseau')
+// }
+// xhr.send()
 
 
 // Methode fech()
@@ -41,7 +41,7 @@ xhr.send()
 
 fetch('https://api.blablagues.net/?rub=blagues')
 .then((response) => {
-    console.log(response)
+    // console.log(response)
 })
 
 .catch((error) => {
@@ -50,7 +50,7 @@ fetch('https://api.blablagues.net/?rub=blagues')
 
 //fonction qui retourne bonjour dans la console
 function bigUp(){
-    console.log('Bonjour');
+    // console.log('Bonjour');
 
 }
 bigUp();//retourner la fonction
@@ -98,7 +98,7 @@ console.log(nproduits.join(''));// join('') pour ranger les elements du tableau
 //init2
 
 const init2 = {
-    method: "POST",
+    method: "DELETE",
     headers: {
     "Content-Type": "application/json"
     },
@@ -109,5 +109,10 @@ const init2 = {
     mode: "cors",
     credentials: "same-origin",
     };
-    fetch("http://localhost:3000/posts", init2)
-    .then(() => console.log("data envoyée"));
+    // fetch("http://localhost:3000/posts", init2)
+    // .then(() => console.log("data envoyée"));
+
+    document.querySelector("form").addEventListener("submit", () => {
+        fetch("http://localhost:3000/posts/9c3d", init2)
+        .then(() => console.log("data envoyée"))
+    })

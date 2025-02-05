@@ -1,14 +1,14 @@
 {
-    "products": [
-        {
-            "nom": "smartphone",
-            "marque": "samsung",
-            "model": "s25 ultra"
-        },
-        {
-            "nom": "ordinateures",
-            "marque": "mackbook",
-            "model": "pro"
-        }
-    ]
+  "posts": [
+    {
+      "id": "6e22",
+      "pseudo": "rostodev",
+      "message": "Hello world!"
+    },
+    {
+      "id": "a3fc",
+      "pseudo": "rostodev",
+      "message": "Hello world!"
+    }
+  ]
 }
