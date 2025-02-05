@@ -136,3 +136,10 @@ const init2 = {
 
         executeFonction();
     }
+
+    const fetchData2 = async () => {
+        awit fetch("mon lien")
+        executeFonction();
+    }
+
+    user

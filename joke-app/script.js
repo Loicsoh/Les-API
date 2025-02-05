@@ -25,3 +25,7 @@ const init = {
 fetch("http:facebook.com", init) 
 .then((res) => console.log(res));
 
+//https://api.blablagues.net/?rub=blagues
+//https://randomuser.me/api/?results=24
+//https://www.themealdb.com/api/json/v1/1/search.php?s=
+
