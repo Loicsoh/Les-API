@@ -1,0 +1,14 @@
+{
+    "products": [
+        {
+            "nom": "smartphone",
+            "marque": "samsung",
+            "model": "s25 ultra"
+        },
+        {
+            "nom": "ordinateures",
+            "marque": "mackbook",
+            "model": "pro"
+        }
+    ]
+}

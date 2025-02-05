@@ -87,3 +87,27 @@ console.log(nproduits.join(''));// join('') pour ranger les elements du tableau
 
 
 //CRUD => Create(POST), Read(GET), Update(PUT), Delete(DELETE)
+
+//cd nom du projet 
+//npm init -y
+//npm install express
+
+
+// ######## npm install -g json-server ##################
+
+//init2
+
+const init2 = {
+    method: "POST",
+    headers: {
+    "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+    pseudo: "rostodev",
+    message: "Hello world!",
+    }),
+    mode: "cors",
+    credentials: "same-origin",
+    };
+    fetch("http://localhost:3000/posts", init2)
+    .then(() => console.log("data envoyée"));
