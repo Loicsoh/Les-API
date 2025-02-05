@@ -116,3 +116,23 @@ const init2 = {
         fetch("http://localhost:3000/posts/9c3d", init2)
         .then(() => console.log("data envoyée"))
     })
+
+    // asynchrone
+
+    setInterval(() => {
+        //console.log("text");
+    }, 2000);
+
+    //**2 
+    
+    //fetch("nom lieu") .then((res) => res)
+
+    //asynchrone
+
+    async function fetchData(){
+        await fetch('mon lieu')
+
+        // attend que le await soit executer avant de continuer
+
+        executeFonction();
+    }
