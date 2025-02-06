@@ -37,10 +37,10 @@ const userDisplay = async () => {
 
 
     const calDay = (Date) => {
-        const today = newDate();
+        const today = new Date();
         // console.log(today);
 
-        const todayTimestamp = Date.parse(today)
+        const todayTimestamp = Date.parse(today);
         console.log(todayTimestamp); 
         const timestamp = Date.parse(Date)
         
